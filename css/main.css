@@ -1,0 +1,374 @@
+@import url(http://fonts.googleapis.com/css?family=Bubbler+One);
+
+* {
+  outline: 0;
+  font-family: "Bubbler One";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bubbler One";
+  font-weight: bold;
+  color: #FFF;
+  margin-top: 50px;
+}
+
+input {
+  font-size: 14px;
+  line-height: normal;
+  font-family: "Ubuntu";
+}
+
+html,
+body {
+  font-family: "Bubbler One";
+  margin: 0;
+  padding: 0;
+  background-color: #ecf0f1;
+  font-size: 16px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  color: #ecf0f1;
+  font-size: 16px;
+  font-family: "Ubuntu";
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  background: #ecf0f1;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.button:hover {
+  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+.main {
+  width: 1000px;
+  height: auto;
+  margin: 0px auto;
+  min-height: 500px;
+}
+
+.choose-language {
+  height: 50px;
+  line-height: 50px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.choose-language a:first-child img {
+  margin-left: 10px;
+}
+
+.choose-language img {
+  margin: 0 4px;
+  border-bottom: solid 1px transparent;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.choose-language img:hover {
+  border-bottom: solid 10px transparent;
+}
+
+.choose-language .login-box {
+  display: none;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  height: 50px;
+  width: 400px;
+  margin-right: 10px;
+  background: #ecf0f1;
+  border-radius: 5px;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: 2;
+}
+
+.choose-language input {
+  position: absolute;
+  top: 12px;
+  border: none;
+  padding: 4px 6px;
+}
+
+.choose-language input.username {
+  left: 13px;
+  width: 150px;
+}
+
+.choose-language input.password {
+  left: 175px;
+  width: 150px;
+}
+
+.choose-language input[type=submit] {
+  right: 13px;
+  background: #f1c40f;
+  color: #FFF;
+}
+
+.choose-language input[type=submit]:hover {
+  background: #FFF;
+  color: #f1c40f;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none;
+}
+
+header {
+  background: #3498db;
+  height: 125px;
+  text-align: center;
+  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header div.menu-responsive {
+  display: none;
+}
+
+header div.menu {
+  list-style: none;
+  height: 125px;
+  position: relative;
+}
+
+header div.menu a:first-child div {
+  margin: 0;
+}
+
+header div.menu div {
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+  margin-left: -4px;
+  position: relative;
+  padding: 90px 0 10px 0;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+header div.menu div:hover {
+  background: #2980b9;
+}
+
+.home:before, .sites:before, .api:before, .language:before {
+  position: absolute;
+  left: 85px;
+  top: 25px;
+}
+
+header div.menu div.home:before {
+  content: url("../img/home.png");
+}
+
+header div.menu div.sites:before {
+  content: url("../img/sites.png");
+}
+
+header div.menu div.api:before {
+  content: url("../img/wrench.png");
+}
+
+header div.menu div.language:before {
+  content: url("../img/language.png");
+}
+
+header div.menu div.home:hover {
+  border-top: solid 4px #ADFF2F;
+  padding-top: 86px;
+}
+
+header div.menu div.sites:hover {
+  border-top: solid 4px #f1c40f;
+  padding-top: 86px;
+}
+
+header div.menu div.api:hover {
+  border-top: solid 4px #e74c3c;
+  padding-top: 86px;
+}
+
+header div.menu div.language:hover {
+  border-top: solid 4px #8e44ad;
+  padding-top: 86px;
+}
+
+header div.menu div.logo {
+  width: 204px;
+  position: relative;
+  background: none;
+}
+
+header div.menu div.logo img {
+  width: 192px;
+  height: 192px;
+  position: absolute;
+  left: 0;
+  top: -50px;
+}
+
+.container {
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.container .home-content {
+  padding: 20px 30px;
+  background: #3498db;
+  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container .home-content h1 {
+  margin-top: 20px;
+}
+
+.container .infos {
+  display: inline-block;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.container .infos h2 {
+  color: #7f8c8d;
+  margin: 0;
+}
+
+.container .infos p {
+  color: #333;
+}
+
+.infos .button {
+  position: relative;
+  margin-left: -42px;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none;
+  font-weight: bold;
+}
+
+.infos .button:hover {
+  background: #2a6496;
+  color: #fff;
+}
+
+.infos .button:after {
+  content: url("../img/arrow-right-blue.png");
+  background: #ecf0f1;
+  position: absolute;
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+  right: -41px;
+  top: 0;
+}
+
+.infos .button:hover:after {
+  content: url("../img/arrow-right.png");
+  background: #2a6496;
+}
+
+.info-1,
+.info-2,
+.info-3 {
+  position: relative;
+  width: 300px;
+  background: #FFF;
+  min-height: 300px;
+  float: left;
+  margin: 0 25px;
+  border: solid 1px #bdc3c7;
+  padding: 20px;
+  -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.info-1 {
+  margin-left: 0;
+}
+
+.info-3 {
+  margin-right: 0;
+}
+
+.container .sites-content {
+  padding: 20px;
+  background: #FFF;
+  border: solid 1px #bdc3c7;
+}
+
+.container .sites-content table th {
+  border: none;
+}
+
+.container .sites-content table td, th {
+  width: 50%;
+  padding: 5px 10px;
+  border-top: solid 1px #bdc3c7;
+}
+
+.container .sites-content table tr:hover {
+  background: #ecf0f1;
+}
+
+.container h1.outer-h1 {
+  color: #2980b9;
+  margin-top: 20px;
+}
+
+.container .api-content p {
+  color: #000;
+}
+
+.container .api-content h2 {
+  color: #3498db;
+}
+
+.container .api-content .diagram img {
+  width: 100%;
+  max-width: 426px;
+  margin-top: 50px;
+}
+
+footer {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+}

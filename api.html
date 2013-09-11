@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Less</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="javascript" type="text/javascript" href="js/vendor/jquery-1.10.2.min.js">
+  <link rel="javascript" type="text/javascript" href="js/vendor/modernizr-2.6.2.min.js">
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="choose-language">
+      Escolha seu idioma:
+      <img src="img/en.png">
+      <img src="img/es.png">
+      <img src="img/pt-BR.png">
+
+      <a href="#" class="login pull-right">Login</a>
+
+      <div class="login-box">
+        <input type="text" class="username" placeholder="usuário">
+        <input type="password" class="password" placeholder="senha">
+        <input type="submit" value="Entrar" class="button">
+      </div>
+    </div>
+
+    <header>
+      <div class="menu-responsive">
+        <ul>
+          <li class="responsive">MENU
+            <ul>
+              <a href="index.html">
+                <li>HOME</li>
+              </a>
+              <a href="sites.html">
+                <li>MEUS SITES</li>
+              </a>
+              <a href="api.html">
+                <li>API</li>
+              </a>
+              <a href="index.html">
+                <li>LÍNGUAS</li>
+              </a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu">
+        <a href="index.html">
+          <div class="home">HOME</div>
+        </a>
+        <a href="sites.html">
+          <div class="sites">MEUS SITES</div>
+        </a>
+        <a href="index.html">
+          <div class="logo"><img src="img/lock.png"></div>
+        </a>
+        <a href="api.html">
+          <div class="api">API</div>
+        </a>
+        <a href="index.html">
+          <div class="language">LÍNGUAS</div>
+        </a>
+      </ul>
+    </header>
+
+    <div class="container">
+      <h1 class="outer-h1">Documentação da API</h1>
+      <div class="api-content">
+        <p>Esta documentação fornece a informação necessária para a integração do Password-Less em websites. É aconselhável que as pessoas que leiam estes documentos tenham conhecimento básico sobre HTTP GET e chamadas POST e JSON.</p>
+
+        <h2>Tabela de conteúdos</h2>
+        <p><a href="#overview" class="links">Visão global</a></p>
+        <p><a href="#summary" class="links">Sumário</a></p>
+        <p><a href="#registering" class="links">Registrando sites</a></p>
+
+        <div id="overview">
+          <h2>Visão global</h2>
+          <p>O diagrama de sequência na direita mostra o esquema geral de autenticação. Ele contém os seguintes passos:</p>
+
+          <ul>
+            <li>Depois de registrar o seu site, você pode fazer uma chamada HTTP POST ao Password-Less com e-mail de usuário ou id;</li>
+            <li>Password-Less envia um e-mail para o usuário com um link de login seguro;</li>
+            <li>O usuário clica no link de acesso;</li>
+            <li>Password-Less envia uma chamada HTTP GET para o seu site para que então você saiba que logou;</li>
+            <li>Seu site envia uma chamada HTTP GET para o Password-Less perguntando pelo ID de usuário e e-mail;</li>
+            <li>Após receber dados do usuário, você loga seu usuário e aparece sua página de bem-vindo;</li>
+          </ul>
+
+          <p>Cada passo, incluindo parâmetros e formatos de resposta, serão explicados com detalhes nas próximas seções.</p>
+
+          <p>O sumário mostra todas as REST api's disponíveis. O formato retornado é JSON.</p>
+
+          <div class="diagram text-center">
+            <img src="img/auth_seq.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span class="pull-left">Password-Less - Projeto desenvolvido por <a href="https://github.com/renzon/pswdless" target="_blank">renzon</a></span>
+    <span class="pull-right">Front-end por <a href="http://www.designa.com.br" target="_blank">Designa</a></span>
+  </footer>
+</body>
+</html>

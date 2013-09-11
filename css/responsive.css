@@ -1,0 +1,436 @@
+@media screen and (min-width: 800px) and (max-width:960px){
+  .main {
+    width: 90%;
+  }
+
+  .home:before, .sites:before, .api:before, .language:before {
+    position: absolute;
+    left: 40%;
+    top: 25px;
+  }
+
+  header div.menu div.logo {
+    width: 20%;
+    position: relative;
+    background: none;
+  }
+
+  header div.menu div.logo img {
+    width: 144px;
+    height: 144px;
+    position: absolute;
+    left: 0;
+    top: -25px;
+  }
+
+  .container .infos {
+    display: inline-block;
+    padding: 0;
+  }
+
+  .info-1,
+  .info-2,
+  .info-3 {
+    position: relative;
+    width: 100%;
+    background: #FFF;
+    min-height: 0;
+    float: left;
+    margin-top: 30px;
+    border: solid 1px #bdc3c7;
+    padding: 20px;
+    -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .info-1, .info-2, .info-3 {
+    margin-left: 0;
+  }
+
+  footer {
+    width: 90%;
+  }
+
+}
+
+@media screen and (min-width: 480px) and (max-width:800px){
+  .main {
+    width: 90%;
+  }
+
+  .home:before, .sites:before, .api:before, .language:before {
+    position: absolute;
+    left: 40%;
+    top: 25px;
+  }
+
+  header div.menu div {
+    width:25%;
+  }
+
+  header div.menu div.logo {
+    display: none;
+  }
+
+  header div.menu div.logo img {
+    width: 144px;
+    height: 144px;
+    position: absolute;
+    left: 0;
+    top: -25px;
+  }
+
+  .container .infos {
+    display: inline-block;
+    padding: 0;
+  }
+
+  .info-1,
+  .info-2,
+  .info-3 {
+    position: relative;
+    width: 100%;
+    background: #FFF;
+    min-height: 0;
+    float: left;
+    margin-top: 30px;
+    border: solid 1px #bdc3c7;
+    padding: 20px;
+    -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .info-1, .info-2, .info-3 {
+    margin-left: 0;
+  }
+
+  footer {
+    width: 90%;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width:480px){
+  *,
+  body,
+  html,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-size: 0.95em;
+  }
+
+  .choose-language img {
+    width: 24px;
+  }
+
+  .choose-language .login-box {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    height: 130px;
+    width: 180px;
+    margin-right: 10px;
+    background: #ecf0f1;
+    border-radius: 5px;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    z-index: 2;
+  }
+
+  .choose-language input {
+    position: absolute;
+    top: 12px;
+    border: none;
+    padding: 4px 6px;
+    font-size: 0.95em;
+  }
+
+  .choose-language input.password {
+    left: 13px;
+    top: 50px;
+  }
+
+  .choose-language input[type=submit] {
+    top: 90px;
+  }
+
+  .choose-language input[type=submit]:active {
+    background: #FFF;
+    color: #f1c40f;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+  }
+
+  .main {
+    width: 90%;
+  }
+
+  header {
+    background: url("lock.png") no-repeat;
+    background-size: 128px;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+  }
+
+  header div.menu {
+    display: none;
+  }
+
+  header div.menu-responsive {
+    display: inline;
+    text-align: left;
+    float: right;
+    margin-right: 10%;
+  }
+
+  header div.menu-responsive ul {
+    list-style: none;
+    padding: 5px 0;
+    width: 100px;
+    border-radius: 3px;
+    background: #2c3e50;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  header div.menu-responsive ul li ul {
+    text-align: left;
+    display: none;
+    padding: 0;
+  }
+
+  header div.menu-responsive ul li ul a li {
+    text-decoration: none;
+    color: #FFF;
+    padding: 4px 0 4px 10px;
+  }
+
+  header div.menu-responsive ul li ul li:hover {
+    background: #2980b9;
+  }
+
+  .container .infos {
+    display: inline-block;
+    padding: 0;
+  }
+
+  .info-1,
+  .info-2,
+  .info-3 {
+    position: relative;
+    width: 100%;
+    background: #FFF;
+    min-height: 0;
+    float: left;
+    margin-top: 30px;
+    border: solid 1px #bdc3c7;
+    padding: 20px;
+    -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .info-1, .info-2, .info-3 {
+    margin-left: 0;
+  }
+
+  .infos .button:after {
+    padding: 6px;
+    width: 23px;
+    height: 23px;
+    right: -36px;
+    top: 0;
+  }
+
+  .infos .button:active:after {
+    content: url("arrow-right.png");
+    background: #2a6496;
+  }
+
+  footer {
+    width: 90%;
+  }
+
+  footer span:before {
+    font-size: 2em;
+  }
+
+}
+
+@media screen and (max-width: 320px){
+  *,
+  body,
+  html,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-size: 0.95em;
+  }
+
+  .choose-language img {
+    width: 24px;
+  }
+
+  .choose-language .login-box {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    height: 130px;
+    width: 180px;
+    margin-right: 10px;
+    background: #ecf0f1;
+    border-radius: 5px;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    z-index: 2;
+  }
+
+  .choose-language input {
+    position: absolute;
+    top: 12px;
+    border: none;
+    padding: 4px 6px;
+    font-size: 0.95em;
+  }
+
+  .choose-language input.password {
+    left: 13px;
+    top: 50px;
+  }
+
+  .choose-language input[type=submit] {
+    top: 90px;
+  }
+
+  .choose-language input[type=submit]:active {
+    background: #FFF;
+    color: #f1c40f;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+  }
+
+  .main {
+    width: 90%;
+  }
+
+  header {
+    background: url("lock.png") no-repeat;
+    background-size: 128px;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+  }
+
+  header div.menu {
+    display: none;
+  }
+
+  header div.menu-responsive {
+    display: inline;
+    text-align: left;
+    float: right;
+  }
+
+  header div.menu-responsive ul {
+    list-style: none;
+    padding: 5px 0;
+    width: 100px;
+    border-radius: 3px;
+    background: #2c3e50;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  header div.menu-responsive ul li ul {
+    text-align: left;
+    display: none;
+    padding: 0;
+  }
+
+  header div.menu-responsive ul li ul a li {
+    text-decoration: none;
+    color: #FFF;
+    padding: 4px 0 4px 10px;
+  }
+
+  header div.menu-responsive ul li ul li:hover {
+    background: #2980b9;
+  }
+
+  .container .infos {
+    display: inline-block;
+    padding: 0;
+  }
+
+  .info-1,
+  .info-2,
+  .info-3 {
+    position: relative;
+    width: 100%;
+    background: #FFF;
+    min-height: 0;
+    float: left;
+    margin-top: 30px;
+    border: solid 1px #bdc3c7;
+    padding: 20px;
+    -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .info-1, .info-2, .info-3 {
+    margin-left: 0;
+  }
+
+  .infos .button:after {
+    padding: 6px;
+    width: 23px;
+    height: 23px;
+    right: -36px;
+    top: 0;
+  }
+
+  .infos .button:active:after {
+    content: url("arrow-right.png");
+    background: #2a6496;
+  }
+
+  footer {
+    width: 90%;
+  }
+
+  footer span:before {
+    font-size: 2em;
+  }
+
+}
